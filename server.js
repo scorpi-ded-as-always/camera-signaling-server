@@ -35,4 +35,8 @@ server.listen(PORT, () => {
 });
 
 
+socket.on("viewer-ready", () => {
+  socket.broadcast.emit("viewer-ready");
+});
+
 
